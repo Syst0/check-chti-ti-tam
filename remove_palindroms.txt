@@ -1,0 +1,7 @@
+def remove_palindroms(a):
+    n = []
+    for i in range(len(a) - 1):
+        if a[i].lower() == a[i][::-1].lower():
+            n.append(i)
+    for i in range(len(n)):
+        a.pop(n[i])
